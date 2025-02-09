@@ -2,12 +2,7 @@
 	    
 ; Configuração dos Fuses bits do microcontrolador
     __CONFIG _FOSC_INTOSCIO & _WDTE_OFF & _PWRTE_ON & _MCLRE_OFF & _BOREN_OFF & _LVP_OFF & _CPD_OFF & _CP_OFF
-    
-    
-; Configuração PWM 
-; PR2 = [(Fosc) / (Fpwm x 4 x PRESCALE_TIMER2)] - 1
-
-    
+        
 #DEFINE SENSOR_ESQUERDO	    PORTB,  5
 #DEFINE	SENSOR_MEIO	    PORTB,  6
 #DEFINE	SENSOR_DIREITO	    PORTB,  7
@@ -109,7 +104,6 @@ LOOP:
 	
 	;LÓGICA SENSOR_ESQUERDO
     
-  
 	BTFSC   SENSOR_ESQUERDO
 	MOVLW   VIRA_ESQUERDA_FRACO
     
