@@ -75,7 +75,7 @@ INICIO:
     
 LOOP:
     
-    CLRW
+    ;CLRW
     
     ;LÓGICA SENSOR_ESQUERDO
     
